@@ -1,4 +1,23 @@
-# Ophthalmology domain-specific Neural Word Embeddings
+# Ophthalmology Domain-Specific Neural Word Embeddings
 
 - Word embddings which are specific to the domain of ophthalmology, trained on ophthalmology scientific literature abstracts from Pubmed 
 - A set of analogies which are domain-specific to ophthalmology, which can be used to evaluate word embeddings on an ophthalmology-related task
+
+## Dependencies 
+
+## Files 
+- analogies.csv - contains the ophthalmology domain-specific analogies, word1:word2::word3:word4. The last column of words are the "wrong answers" in place of word4, the correct answer. 
+- emr-cbow-embeddings.py - Trains 300-dimensional word embeddings from EMR text using word2vec CBOW architecture 
+- emr-unstructured-extrinsic.py - Uses EMR embeddings to train a neural network to predict the prognosis of low vision patients using their EMR ophthalmology progress notes
+- extract-emr-cbow.py - Extracts CBOW word windows from the EMR notes, removing stopwords and words with frequency <5
+- extract-pubmed-cbow.py - Extracts CBOW word windows from the PubMed abstracts, removing stopwords and words with frequency <5
+- glove-unstructured-extrinsic.py - Uses GloVE embeddings to train a neural network to predict the prognosis of low vision patients using their EMR ophthalmology progress notes
+- parse-pubmed.py - Takes a PubMed .xml file and stores the article metadata into a sqlite database 
+- pubmed-cbow-embeddings.py - Trains 300-dimensional word embeddings from PubMed abstracts using word2vec CBOW architecture 
+- pubmed-unstructured-extrinsic.py - Uses PubMed embeddings to train a neural network to predict the prognosis of low vision patients using their EMR ophthalmology progress notes
+- run-analogies.py - Tests performance of PubMed, EMR, and GloVe embeddings on ophthalmology domain-specific analogies 
+- runholdout.py - Run the low vision prediction model on a holdout set 
+
+## PubMed Word Embeddings
+- Due to the size of the files for PubMed Word Embeddings, these can be downloaded here. 
+- In the zip file you will find a plain text file with one line per word embedding, as well as a convenient python Pickle file which, when opened, loads the word embeddings into a Python dictionary. 
