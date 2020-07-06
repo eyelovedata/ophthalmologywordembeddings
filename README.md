@@ -3,7 +3,7 @@ This repository provides supporting code and information on research conducted b
 
 - Word embeddings which are specific to the domain of ophthalmology, trained on ophthalmology scientific literature abstracts from Pubmed
 - A set of analogies which are domain-specific to ophthalmology, which can be used to evaluate word embeddings on an ophthalmology-related task, and related code 
-- Related code to train these word embeddings, either from PubMed ophthalmology abstracts or from ophthalmology notes from the electronic medical record (EMR) 
+- Related code to train the ophthalmology domain-specific word embeddings, either from PubMed ophthalmology abstracts or from ophthalmology notes from the electronic medical record (EMR) 
 - A neural network model extending the TextCNN architecture published by [Kim et al in 2014](https://arxiv.org/abs/1408.5882) to compare the performance of these embeddings in predicting the visual prognosis of patients with low vision using ophthalmology notes from the EMR. 
 
 ## Dependencies 
