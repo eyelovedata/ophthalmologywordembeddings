@@ -4,7 +4,7 @@
 - A set of analogies which are domain-specific to ophthalmology, which can be used to evaluate word embeddings on an ophthalmology-related task
 
 ## Dependencies 
-- Python 3.5+, numpy (any version), tensorflow 2.x, tensorflow_datasets, beautifulsoup 4
+- Python 3.5+, numpy (any version), tensorflow 2.x, tensorflow_datasets, beautifulsoup 4, sqlite3
 
 ## Files 
 - analogies.csv - contains the ophthalmology domain-specific analogies, word1:word2::word3:word4. The last column of words are the "wrong answers" in place of word4, the correct answer. 
@@ -20,5 +20,5 @@
 - runholdout.py - Run the low vision prediction model on a holdout set 
 
 ## PubMed Word Embeddings
-- Due to the size of the files for PubMed Word Embeddings, these can be downloaded here. 
-- In the zip file you will find a plain text file with one line per word embedding, as well as a convenient python Pickle file which, when opened, loads the word embeddings into a Python dictionary. 
+- Due to the size of the files for PubMed Word Embeddings, these can be downloaded here: https://sywang.people.stanford.edu/sites/g/files/sbiybj17276/f/pubmedophthalmologywordembeddings.zip
+- In the zip file you will find a plain text file with one line per word embedding, as well as a convenient Python pickle file which, when opened, loads the word embeddings into a Python dictionary where the words are the keys and the embedding vectors are the values. 
