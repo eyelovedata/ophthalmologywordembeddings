@@ -1,7 +1,9 @@
 # Ophthalmology Domain-Specific Neural Word Embeddings
 
-- Word embddings which are specific to the domain of ophthalmology, trained on ophthalmology scientific literature abstracts from Pubmed 
-- A set of analogies which are domain-specific to ophthalmology, which can be used to evaluate word embeddings on an ophthalmology-related task
+- Word embeddings which are specific to the domain of ophthalmology, trained on ophthalmology scientific literature abstracts from Pubmed
+- A set of analogies which are domain-specific to ophthalmology, which can be used to evaluate word embeddings on an ophthalmology-related task, and related code 
+- Related code to train these word embeddings, either from PubMed ophthalmology abstracts or from ophthalmology notes from the electronic medical record (EMR) 
+- Architecture of neural network model to compare the performance of these embeddings in predicting the visual prognosis of patients with low vision using ophthalmology notes from the EMR. 
 
 ## Dependencies 
 - Python 3.5+, numpy (any version), tensorflow 2.x, tensorflow_datasets, beautifulsoup 4, sqlite3
@@ -20,5 +22,5 @@
 - runholdout.py - Run the low vision prediction model on a holdout set 
 
 ## PubMed Word Embeddings
-- Due to the size of the files for PubMed Word Embeddings, these can be downloaded here: https://sywang.people.stanford.edu/sites/g/files/sbiybj17276/f/pubmedophthalmologywordembeddings.zip
-- In the zip file you will find a plain text file with one line per word embedding, as well as a convenient Python pickle file which, when opened, loads the word embeddings into a Python dictionary where the words are the keys and the embedding vectors are the values. 
+- Due to the size of the files for PubMed Word Embeddings, these can be downloaded separately from here: https://sywang.people.stanford.edu/sites/g/files/sbiybj17276/f/pubmedophthalmologywordembeddings.zip
+- In the downloaded zip file you will find a plain text file with one line per word embedding, as well as a convenient Python pickle file which, when opened, loads the word embeddings into a Python dictionary where the words are the keys and the embedding vectors are the values. 
