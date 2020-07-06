@@ -4,6 +4,7 @@
 - A set of analogies which are domain-specific to ophthalmology, which can be used to evaluate word embeddings on an ophthalmology-related task
 
 ## Dependencies 
+- Python 3.5+, numpy (any version), tensorflow 2.x, tensorflow_datasets, beautifulsoup 4
 
 ## Files 
 - analogies.csv - contains the ophthalmology domain-specific analogies, word1:word2::word3:word4. The last column of words are the "wrong answers" in place of word4, the correct answer. 
